@@ -1,0 +1,61 @@
+{
+    "packages": [
+        {
+            "id": "pkg0",
+            "quantity_of_content": 10,
+            "content_package_id": "pkg1",
+            "content_unit": null
+        },
+        {
+            "id": "pkg1",
+            "quantity_of_content": 10,
+            "content_package_id": "pkg2",
+            "content_unit": null
+        },
+        {
+            "id": "pkg2",
+            "quantity_of_content": 10,
+            "content_package_id": "pkg3",
+            "content_unit": null
+        },
+        {
+            "id": "pkg3",
+            "quantity_of_content": 10,
+            "content_package_id": null,
+            "content_unit": "ml"
+        },
+        {
+            "id": "pkg4",
+            "quantity_of_content": 10,
+            "content_package_id": "pkg3",
+            "content_unit": null
+        }
+    ],
+    "counts": [
+        {
+            "package_id": "pkg0",
+            "unit": null,
+            "quantity": 10
+        },
+        {
+            "package_id": "pkg1",
+            "unit": null,
+            "quantity": 10
+        },
+        {
+            "package_id": "pkg2",
+            "unit": null,
+            "quantity": 10
+        },
+        {
+            "package_id": "pkg3",
+            "unit": null,
+            "quantity": 10
+        },
+        {
+            "package_id": "pkg4",
+            "unit": null,
+            "quantity": 10
+        }
+    ]
+}
