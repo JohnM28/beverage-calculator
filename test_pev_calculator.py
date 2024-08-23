@@ -36,6 +36,20 @@ class TestBevCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             bc.calculate_total_quantity()
 
+    def test_missing_content_package_id(self):
+        packages_missing_content = self.packages.copy()
+        packages_missing_content[1]["content_package_id"] = None
+        bc = BevCalculator(packages_missing_content, self.counts)
+        with self.assertRaises(ValueError):
+            bc.calculate_total_quantity()
+
+    def test_non_existent_content_package_id(self):
+        packages_non_existent = self.packages.copy()
+        packages_non_existent[1]["content_package_id"] = "random_non_existent"
+        bc = BevCalculator(packages_non_existent, self.counts)
+        with self.assertRaises(ValueError):
+            bc.calculate_total_quantity()
+
     def test_negative_quantity(self):
         negative_counts = self.counts.copy()
         negative_counts[0]["quantity"] = -10
